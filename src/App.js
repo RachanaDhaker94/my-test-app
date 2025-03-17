@@ -7,7 +7,7 @@ function App() {
   const [currentPage, setCurrentPage] = React.useState(1);
 
   React.useEffect(() => {
-    fetch("https://picsum.photos/v2/list?limit=10")
+    fetch("https://picsum.photos/v2/list")
       .then((res) => res.json())
       .then((res) => setData(res));
   }, []);
